@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "mystyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1> The Bookery</h1>
+    <header class = "header-container">
+        <div class = "headerMenu-container">
+            <button id = "menuBtn">Menu</button>
+        <button id = "newbooksBtn">New Books</button>
+        <button id = "addBooksBtn">Store a Book</button>
+        <button id = "historialBtn">Historial</button>
+        </div>
+        
+    </header>
+    <div class = "principal-container">
+        
+        <div class = "addList-container">
+            <form class ="inputs-form">
+                <input type ="text" id = "bookItem" placeholder="Book title" required>
+                <input type ="text" id = "authorItem" placeholder="Book author" required>
+                <input type ="text" id = "priceItem" placeholder="Book price" required>
+            </form>
+            
+            <div class = "button-container">
+                <button id = "purchaseBtn">Add Book</button>
+            </div>
+            <small class="error" id = "errorMsg"></small>
+        </div>
+        
+        <div class = "list-container">
+            <ul id="shoppingList">
+    
+            </ul>
+        </div>
+    </div>
+    
+    <script src = "./scripts/script.js"></script>
+</body>
+</html>

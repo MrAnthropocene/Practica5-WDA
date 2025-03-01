@@ -1,0 +1,116 @@
+body{
+    
+    background-color: rgb(80, 78, 78);
+    background-image: url(https://as1.ftcdn.net/v2/jpg/06/36/50/54/1000_F_636505430_pMmtRz8Pt1iyfjKpilEhYODlol1FSUQg.jpg);
+    background-size: cover;
+    display: grid;
+    place-items: center;
+
+}
+h1{
+    color: aliceblue;
+    text-align: center;
+    margin: auto;
+}
+header{
+    height: 50%;
+}
+.headerMenu-container{
+    display: flex;
+    height: 30px;
+    width: 100vh;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    button{
+        width: 80%;
+    }
+    
+}
+.principal-container{
+    margin-top: 100px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+    max-height: 600px;
+    max-width: 800px;
+    min-height: 355px;
+    
+}
+.list-container{
+    width: auto; /* Ancho del contenedor */
+    height: auto; /* Altura fija */
+    overflow-y: auto; /* Muestra la barra de desplazamiento vertical si es necesario */
+    border: 1px solid #ccc; /* Solo para visualización */
+    padding: 10px;
+    max-height: 200px;
+    max-width: 400px;
+    min-height: 355px;
+
+}
+input{
+    background-color: transparent;
+    height: 80%;
+    width: 80%;
+    margin: 5px;
+    border: none;
+    border-bottom-style:groove;
+    border-color: rgb(100, 100, 100);
+}
+input::placeholder {
+    color: black; /* Color del placeholder */
+    opacity: 1; /* Asegura que el color sea completamente opaco */
+}
+#addBooksBtn{
+    border-style: groove;
+    border-width: 3px;
+}
+button{
+    width: 30%;
+}
+.button-container{
+    margin-top: 80px;
+
+    text-align: center;
+}
+.imgBook-container{
+    height: 240px;
+    img{
+        width: auto;
+        height: 240px;
+    }
+}
+.bookInfo-container{
+    background-color: rgb(89, 74, 74,.06);
+}
+.addList-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+
+}
+.inputs-form{
+    height: 30px;
+    text-align: center;
+}
+@media (max-width: 504px) {
+    .headerMenu-container{
+
+        width: 100%;
+        background-color: aliceblue;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+
+        button{
+            height: 30px;
+            width: 100vw;
+        }
+        
+    }
+    .principal-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
